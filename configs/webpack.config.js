@@ -8,11 +8,6 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     publicPath: '/dist/',
   },
-  resolveLoader: {
-    alias: {
-      customABLoader: path.resolve(__dirname, './customABLoader'),
-    },
-  },
   module: {
     rules: [
       {
@@ -20,7 +15,7 @@ module.exports = {
         use: [
           'babel-loader',
           {
-            loader: 'customABLoader',
+            loader: 'file-switch-loader',
             options: {
               version: 'b',
             },
@@ -34,7 +29,7 @@ module.exports = {
           {loader: 'css-loader', options: {modules: true, importLoaders: 1}},
           'postcss-loader',
           {
-            loader: 'customABLoader',
+            loader: 'file-switch-loader',
             options: {
               version: 'b',
             },

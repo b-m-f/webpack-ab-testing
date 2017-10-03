@@ -17,6 +17,7 @@
     "cssnano": "^3.10.0",
     "eslint": "^4.8.0",
     "eslint-plugin-react": "^7.4.0",
+    "file-switch-loader": "^1.0.0",
     "postcss-cssnext": "^3.0.2",
     "postcss-import": "^11.0.0",
     "postcss-loader": "^2.0.6",
